@@ -1,3 +1,4 @@
+
 angular.module('blocJams', ['ui.router']);
 
 (function() {
@@ -18,9 +19,9 @@ angular.module('blocJams', ['ui.router']);
              templateUrl: '/templates/album.html'
          })
 
-         .state('album', {
-             url: '/album',
-             templateUrl: '/templates/album.html'
+         .state('collection', {
+             url: '/collection',
+             templateUrl: '/templates/collection.html'
          });
   }
 
