@@ -14,7 +14,8 @@
               {title: 'Magenta', duration: 374.22, audioUrl: 'assets/music/magenta' }
           ]
       };
-      this.albumData = albumPicasso;
+      // this.albumData = Fixtures.getAlbum();
+      this.albumData = angular.copy(albumPicasso);
     }
 
     angular
