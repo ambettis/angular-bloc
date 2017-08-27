@@ -144,6 +144,17 @@
         }
     };
 
+        /**
+    * @function setVolume
+    * @desc Set volume of the song player
+    * @param {Number} volume
+    */
+    SongPlayer.setVolume = function(volume) {
+      if (currentBuzzObject) {
+        currentBuzzObject.setVolume(volume);
+        SongPlayer.volume = volume;
+      }
+    };
 
   return SongPlayer;
 
@@ -151,5 +162,5 @@
 
   angular
     .module('blocJams')
-    .factory('SongPlayer',['$rootScope,', 'Fixtures', SongPlayer]);
+    .factory('SongPlayer',['$rootScope', 'Fixtures', SongPlayer]);
 })();
